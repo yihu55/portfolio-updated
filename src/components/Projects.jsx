@@ -16,7 +16,7 @@ export default function Projects() {
     <Grid container >
       <Grid item xs={12} m={15} >
         <FadeInSection>
-          <Typography variant='h2' color='grey' >Projects </Typography>
+          <Typography variant='h2' color='grey' >Projekter </Typography>
         </FadeInSection>
       </Grid>
          <Project projectDescription='E-handel butik, utvecklat av React Typescript, Nodejs, och Bootstrap. MongoDB är databashanterare. Kunder kan bland annat logga in, söka produkter enlig kategori, beställa varor. Sist men inte minst, en admin kan modifiera status på beställningar, lista ut alla order, lägga till produkt, etc...' imageSrcs={[cakeShop1,cakeShop2,cakeShop3]}  />

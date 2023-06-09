@@ -11,7 +11,7 @@ export default function Contact() {
       <Grid container>
             <Grid item xs={8} mt={35} ml={15}  sx={{position:'absolute'}}>
                <FadeInSection>
-                  <Typography variant='h2' color='grey'>Contact Me
+                  <Typography variant='h2' color='grey'>Kontakta mig
                   </Typography>
                </FadeInSection>
             </Grid>

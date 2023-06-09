@@ -11,7 +11,7 @@ function Icon() {
       <Grid item xs={12}>
        
         <Typography variant="subtitle1" sx={{display:'flex',justifyContent:'center', alignItem:'center'}}>
-        Fullstack developer
+        Fullstack webbutvecklare
         </Typography>
     </Grid> 
     </Grid>
