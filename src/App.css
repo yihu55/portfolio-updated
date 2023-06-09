@@ -1,0 +1,113 @@
+body{
+  background-color: aliceblue;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+}
+
+
+svg  {
+  max-width:1200px;
+  height:300px;
+  display: block;
+  margin:auto;
+}
+  .text { 
+    display: none;
+  }
+  /* &.go {*/
+    .text {
+      font-size: 15px;
+      display: block;
+    } 
+    .text-stroke {
+      fill: none;
+      stroke: #51256f;
+      stroke-width: 4.5px;
+      stroke-dashoffset: 900;
+      stroke-dasharray: 900;
+      animation: dash 16s ease forwards;
+      animation-iteration-count: infinite;
+
+    }
+    .text-stroke-2 {
+      /* stroke: #1f0e4d; */
+      stroke:#51256f;
+      animation-delay: 1.2s;
+    } 
+    img{
+      max-width:100%;
+      height:auto;
+      /* object-fit: contain; */
+    }
+
+
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translate(0vh);
+  visibility: hidden;
+  transition: opacity 2000ms ease-out, transform 1600ms ease-out,
+    visibility 2000ms ease-out;
+  will-change: opacity, transform, visibility;
+  position: absolute;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translate(15vh);
+  visibility: visible;
+}
+
+.scroll-section{
+  opacity: 0;
+  /* transform:translateX(-50px); */
+  visibility:hidden;
+  transition: opacity 2s ease, transform 2s ease, visibility 2s ease;
+}
+.scroll-section.is-visible {
+  opacity: 1;
+  transform: translate(0,30px);
+  visibility: visible;
+}
+.project-border::after{
+  content: '';
+  width:60%;
+  position:relative;
+  top:160px;
+  margin:auto;
+  border-bottom:1px solid grey;
+}
+.contact-methods{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.contact-methods a{
+  color:rgb(18, 57, 92);
+}
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #555;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.scroll-to-top-button.show {
+  display: block;
+}
